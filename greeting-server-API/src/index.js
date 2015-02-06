@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 var server = http.createServer(app);
 
-var client = require('redis').createClient();
+// var client = require('redis').createClient();
 
 
 app.set('view engine', 'ejs');
@@ -34,4 +34,4 @@ server.listen('3000', function(){
   console.log('listening 3000')
 });
 
-// module.exports = server;
+module.exports = server;
